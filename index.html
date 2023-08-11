@@ -12,8 +12,8 @@
 <script>    
     let ws;
     try{
-    const proto = window.location.protocol === 'https:' ? 'wss' : 'ws';
-    ws = new WebSocket(`${proto}://${window.location.host}`);
+        const proto = window.location.protocol === 'https:' ? 'wss' : 'ws';
+        ws = new WebSocket(`${proto}://${window.location.host}`);
     }catch(e){
         //
     }
