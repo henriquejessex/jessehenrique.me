@@ -15,10 +15,8 @@
     const proto = window.location.protocol === 'https:' ? 'wss' : 'ws';
     ws = new WebSocket(`${proto}://${window.location.host}`);
     }catch(e){
-        console.log(e);
+        //
     }
-    ws.onmessage = (event) => {
-        console.log(event.data);
-    }
+    ws.onmessage = (event) => { console.log(event.data); }
 </script>
 </html>
